@@ -1,6 +1,6 @@
 class Billboard < ApplicationRecord
+    belongs_to :billboard
     has_many :songs
-    has_many :artist
 
     validates :body, presence: true
 end
